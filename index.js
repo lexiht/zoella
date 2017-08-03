@@ -12,6 +12,7 @@ fetch(url)
 })
 
 const percentOfLikes = (likes, dislikes) => {
+  if (likes === 0 && dislikes === 0) return 0;
   return likes / (likes + dislikes) * 100;
 };
 
