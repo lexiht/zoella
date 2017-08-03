@@ -1,0 +1,25 @@
+{
+  "name": "zoella",
+  "version": "1.0.0",
+  "description": "Write a simple program using this JSON file (http://files.peg.co/zoella_videos.json) which lists Zoella's last 12 videos to return these informations:",
+  "main": "index.js",
+  "dependencies": {
+    "node-fetch": "^1.7.1"
+  },
+  "devDependencies": {
+    "lodash": "^4.17.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lexiht/zoella.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lexiht/zoella/issues"
+  },
+  "homepage": "https://github.com/lexiht/zoella#readme"
+}
