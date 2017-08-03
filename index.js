@@ -10,6 +10,9 @@ fetch(url)
   totalOfViews(videos);
   averageTimeInterval(videos);
 })
+.catch((error) => {
+  console.log(error.message);
+})
 
 const percentOfLikes = (likes, dislikes) => {
   if (likes === 0 && dislikes === 0) return 0;
@@ -28,7 +31,7 @@ const titleOfHighestPercentageLikes = (videos) => {
       highest.title = video.title;
     }
   })
-  console.log('Title of highest % of likes =>', highest.title);
+  console.log('Title of highest percent of likes =>', highest.title);
   return highest.title;
 };
 
@@ -38,7 +41,7 @@ const meanPercentOfLikes = (videos) => {
     total += percentOfLikes(video.likes, video.dislikes);
   })
   let mean = Math.round(total / videos.length);
-  console.log('The mean % of all videos =>', mean + '%');
+  console.log('The mean percent of all videos =>', mean + '%');
   return mean;
 }
 
