@@ -12,7 +12,7 @@ fetch(url)
   console.log('The average time between each video posted =>', averageTimeInterval(videos) + ' days');
 })
 .catch((error) => {
-  console.log(error.message);
+  console.log(error.data.message);
 })
 
 const percentOfLikes = (likes, dislikes) => {
